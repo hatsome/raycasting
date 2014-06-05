@@ -3,7 +3,14 @@
  <head>
  </head>
  <body>
-   	<canvas id="canvas" width="640" height="480"></canvas>
+	<script type="text/javascript">
+			var canvas = document.createElement('canvas');
+			canvas.id = 'canvas';
+			document.body.appendChild(canvas);
+			canvas.width = 500;
+			canvas.height = 500;
+			var ctx = canvas.getContext('2d');
+	</script>
 	<div style="display:none;">
 		<img id="wall" src="images/brickwall.png">
 	</div>
